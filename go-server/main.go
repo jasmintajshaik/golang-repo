@@ -18,7 +18,7 @@ func formHandler(w http.ResponseWriter, r *http.Request) {
 	age := r.FormValue("age")
 	fmt.Fprintf(w, "Your entered details are as below\n")
 	fmt.Fprintf(w, "Name: %s\n", name)
-	fmt.Fprintf(w, "Name: %s\n", age)
+	fmt.Fprintf(w, "Age: %s\n", age)
 	fmt.Fprintf(w, "Address: %s\n", address)
 	fmt.Fprintf(w, "\nThank you! :)")
 }
